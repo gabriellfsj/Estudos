@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando condicionais</title>
+
+    <style>
+        body{
+            background-color: rgb(0,0,0);
+            color:white;
+            
+        }
+        h1{
+            color:rgb(255,255,0);
+            font-size:60px; 
+                          
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Atividade de condicionais!</h1>
+    <h2>Digite a velocidade do seu carro:</h2>
+    <input type="number" name="n1" id="n1">
+    <input type="button" value="enviar" onclick="calc()">
+    <div id="info"></div>
+
+
+   <script>
+       
+
+    function calc() {
+    
+        var v = window.document.getElementById('n1');
+        var velo = Number(v.value)
+        var info = window.document.getElementById('info');
+
+
+       window.alert(`Sua velocidade é ${velo} km/h`);
+       if (velo <= 60) {
+
+        window.alert('Continue assim dentro da velocidade permitida')
+        info.innerHTML = '<h1>Continue assim dentro da velocidade permitida</h1>'
+       }
+       
+       else{
+
+        window.alert('Sua velocidade está alta cuidado !!')
+        info.innerHTML = '<h1>Sua velocidade está alta cuidado !!</h1>'
+
+       }
+        
+
+    }   
+    
+   </script>
+</body>
+</html>

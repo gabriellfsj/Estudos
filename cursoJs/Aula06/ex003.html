@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Segunda atividade </title>
+
+    <style>
+        body{
+            background-color: rgb(101, 211, 219);
+            color: white;
+            font:normal 20pt Arial;    
+        }
+        h1 {
+            color:rgb(243, 247, 39);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Hello word!!</h1><br>
+    <p> Vamos praticar !!</p> 
+    
+    
+    <script>
+       
+             
+        var nome = window.prompt(`Qual o seu nome?`); // windows.prompt será usado para gera um caixa onde você pode escrever
+        var numero1 = Number(window.prompt(`${nome} digite um número`));
+        var numero2 = Number(window.prompt(`${nome} digite um segundo número`));
+        window.alert(`a soma dos dois números é ${(numero1+numero2)}`);
+        document.write(`A soma entre os dois números é ${(numero1+numero2)}</br>`);
+        document.write(`Que bom ${nome} ! Continue programando!</br>`);//cria uma texto no corpo da página
+        document.write(`Aliás o seu nome tem ${nome.length} letras</br>`)
+        var rest = (numero1+numero2)>10?document.write(`${nome} seu número é maior que 10`): document.write(`${nome} o seu número é menor que 10`)
+        document.write(rest);
+        
+    
+    </script>
+</body>
+</html>

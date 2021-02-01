@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício Condicional</title>
+    
+    <style>
+
+        body{
+
+            background-image: url("relogio2.png");
+            background-repeat: no-repeat;
+            background-size:100%;
+            text-align: center;
+            background-size: cover;
+            background-clip:border-box;
+            
+            }
+
+            h1{
+            color:rgb(255,255,0);
+            font-size:60px; 
+                          
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id='hora'>  </div>
+    <div id='data'> data </div>
+    <div id='sdia'> matérias </div>
+
+
+
+    <script>
+        
+        var hagora = new Date() // pegar a hora exata 
+        var hora = hagora.getHours()
+        var dagora = new Date() // pegar o dia da semana 
+        var sdia = dagora.getDay
+        var ddagora = new Date() // pegar a data do dia 
+        var data = ddagora.getDate() 
+        var min = new Date() // pegar os minutos
+        var minutos = min.getMinutes()
+
+        var h = window.document.getElementById('hora')
+        var s = window.document.getElementById('sdia')
+        var d = window.document.getElementById('data')
+
+        window.alert(`${hora} : ${minutos} `)
+        h.innerHTML = `<h1> ${hora} : ${minutos}</h1> `
+        d.innerHTML = `<h1>${ddagora}</h1>` 
+        var b = Number(s.value)
+
+        switch(sdia){
+            
+            case 0 
+                s.innerHTML = ` **** Concurso ****</br>  - Resolver questões. </br> </br> `
+            break
+
+            case 1 
+                s.innerHTML = ` **** Concurso ****</br>  - Resolver questões. </br> </br> `
+                break
+
+            case 2 
+                s.innerHTML = ` **** Concurso ****</br>  - Resolver questões. </br> </br> `
+                break
+
+            case 3 
+                s.innerHTML = ` **** Concurso ****</br>  - Resolver questões. </br> </br> `
+                break
+
+            case 4 
+                s.innerHTML = ` **** Concurso ****</br>  - Resolver questões. </br> </br> `
+                break
+
+                case 5 
+                s.innerHTML = ` **** Concurso ****</br>  - Resolver questões. </br> </br> `
+                break
+
+                case 6 
+                s.innerHTML = ` **** Concurso ****</br>  - Resolver questões. </br> </br> `
+                break
+
+        }
+  
+        
+        
+
+
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício Condicional</title>
+    
+    <style>
+
+        body{
+
+            background-image: url("relogio2.png");
+            background-repeat: no-repeat;
+            background-size:100%;
+            text-align: center;
+            background-size: cover;
+            background-clip:border-box;
+            
+            }
+
+            h1{
+            color:rgb(247, 247, 245);
+            font-size:60px; 
+            background-image: url("fundo1.jpg");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 1000%;
+            border-radius: 45%;
+            font-style: Arial; 
+
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+
+
+            
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgba(0,0,0,0.8);
+            z-index: 99999;
+            opacity:0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+
+        .modal:target {
+        
+            opacity: 1;
+            pointer-events: auto;
+        
+        }
+
+        .modal > div {
+        
+            width: 400px;
+            position: relative;
+            margin: 10% auto;
+            padding: 15px 20px;
+            background: #fff;
+        
+        }
+
+        .fechar {
+
+            position: absolute;
+            width: 30px;
+            right: 400px;
+            top: 120px;
+            text-align: center;
+            line-height: 30px;
+            margin-top: 5px;
+            background: #ff4545;
+            border-radius: 50%;
+            font-size: 16px;
+            color: #8d0000;
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+
+    <a href="#abrirModal"> <h1> Ver meus horários </h1></a>
+
+<div id="abrirModal" class="modal">
+  <a href="#fechar" title="Fechar" class="fechar">x</a>
+    
+    
+     <div id='sdia'> matérias </div>
+
+
+
+</div>
+
+    
+
+
+    <script>
+        
+        var hagora = new Date() // pegar a hora exata 
+        var hora = hagora.getHours()
+        var dagora = new Date() // pegar o dia da semana 
+        var sdia = dagora.getDay() 
+        var ddagora = new Date() // pegar a data do dia 
+        var data = ddagora.getDate() 
+        var min = new Date() // pegar os minutos
+        var minutos = min.getMinutes()
+
+        var h = window.document.getElementById('hora')
+        var s = window.document.getElementById('sdia')
+        var d = window.document.getElementById('data')
+
+       
+        //window.alert(dagora)
+        //h.innerHTML = `${hora} : ${minutos}`
+       // d.innerHTML = `${ddagora}` 
+        
+
+        switch(sdia){
+            
+            case 0: 
+                s.innerHTML = " <strong> Concurso </strong> </br> </br>  - Resolver Questões. </br> </br> <strong> Programação </strong> </br> </br> - Estudar Javascript </br> - Estudar HTML 5 E CSS 3 </br> </br> <strong> Gestão Financeira </strong> </br> </br> - Estudar Gestão Financeira </br> </br> " 
+                break
+
+            case 1: 
+                s.innerHTML = " <strong> Concurso </strong> </br> </br>  - Português </br> - Conhecimentos Bancarios  </br> </br> <strong> Programação </strong> </br></br> - Estudar Javascript </br> - Estudar HTML 5 E CSS 3 </br> </br> <strong> Faculdade de Filosofia </strong> </br> </br> - Introdução a Filosofia (18:20 - 20:00)</br> </br>  <strong> Auto Escola </strong> </br> </br> - Conhecimentos teóricos (14:00 - 16:00) </br>"
+                break
+
+            case 2: 
+                s.innerHTML = " <strong> Concurso </strong> </br> </br>  - Matemática Financeira </br> - Atualidades do Mercado Financeiro  </br> </br> <strong> Programação </strong> </br> </br> - Estudar Javascript </br> - Estudar HTML 5 E CSS 3 </br> </br> <strong> Faculdade de Filosofia </strong> </br></br> - Antropologia Filosófica (18:20 - 20:00)</br> </br>  <strong> Auto Escola </strong> </br> </br> - Conhecimentos teóricos (14:00 - 16:00) </br>"
+                break
+
+            case 3: 
+                s.innerHTML = " <strong> Concurso </strong> </br> </br>  - Probabilidade e estatística </br> - Inglês para o BB  </br> </br> <strong> Programação </strong> </br> </br> - Estudar Javascript </br> - Estudar HTML 5 E CSS 3 </br> </br> <strong> Faculdade de Filosofia </strong> </br></br> - Lógica I (18:20 - 20:00) </br> </br>  <strong> Auto Escola </strong> </br></br> - Conhecimentos teóricos (14:00 - 16:00) </br>"
+                break
+
+            case 4: 
+                s.innerHTML = " <strong> Concurso </strong> </br> </br>  - Informática para concurso </br> - Resolução de Questões  </br> </br> <strong> Programação </strong> </br> </br> - Estudar Javascript </br> - Estudar HTML 5 E CSS 3 </br> </br> <strong> Faculdade de Filosofia </strong> </br></br> - Filosofia e Literatura (18:20 - 20:00)</br> </br>  <strong> Auto Escola </strong> </br> </br> - Conhecimentos teóricos (14:00 - 16:00) </br>"
+                break
+
+            case 5: 
+                s.innerHTML = " <strong> Concurso </strong> </br> </br> - Conhecimentos Bancarios  </br> </br> <strong> Programação </strong> </br> </br> - Estudar Javascript </br> - Estudar HTML 5 E CSS 3 </br> </br> <strong> Faculdade de Filosofia </strong> </br></br> - Sociologia da Educação (18:20 - 20:00) </br> </br>  <strong> Auto Escola </strong> </br> </br> - Conhecimentos teóricos (14:00 - 16:00) </br>"
+                break
+
+            case 6: 
+                s.innerHTML = " <strong> Concurso </strong> </br> </br> - Atualidades do Mercado Financeiro  </br> </br> <strong> Programação </strong> </br> </br> - Estudar Javascript </br> - Estudar HTML 5 E CSS 3 </br></br> <strong> Faculdade de Filosofia </strong> </br> </br> - Resolver Atividades e Trabalhos  </br>"
+                break
+
+        }
+  
+        
+        
+
+
+    
+    
+    </script>
+</body>
+</html>
