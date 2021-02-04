@@ -23,6 +23,12 @@ footer {
 
 }
 
+select#seltab{
+
+    width: 170px;
+
+}
+
 section {
 
     background: white;
