@@ -1,0 +1,65 @@
+Para abrir o terminal  -> ctrl + Alt + T
+
+Para saber o caminho onde estamos -> pwd
+
+Para listar as pastas que posso acessar de onde estou -> ls(correto) ou dir
+
+Para listar os itens de um pasta -> ls 'nome da pasta' ex : ls Documentos
+
+Para abrir um pasta e operar dentro dela -> cd 'nome da pasta' ex: cd Documentos
+
+Para criar uma pasta -> mkdir 'nome da pasta' ex: mkdir teste
+
+Para retornar de uma pasta que você está dentro -> cd ..
+
+Para ir para o distrito raiz do linux -> cd / 
+
+Para exibir as lista com detalhes -> ls -l
+
+Para saber tudo sobre um comendo -> man 'comando' - man ls
+
+Para saber tudo sobre um comando em pt-br -> 'comando' --help ex: ls --help
+
+Para exibir um histórico de todos os comando durante a excução do terminal -> history
+
+Para executar o ultimo comando digitado -> !!
+
+Para renomear um arquivo -> mv 'nome da pasta' 'novo nome'
+
+Para mover uma parta para o diretoria de de fora  - mv 'nome da pasta' ~ 
+
+Para mover um arquivo para um diretorio -> mv 'nome do aquivo' /home localização do arquivo
+
+Para criar um arquivo vazio -> touch 'nome do arquivo'
+
+Para copiar um arquvo de um pasta -> cp 'nome do arquivo' / local onde que deixar
+
+Para excluir uma pasta -> rmdir 'nome da pasta',
+
+Para apagar un arquivo - > rm 'nome do arquivo'
+
+
+
+
+
+--------Atalho do terminal ----------
+
+ctrl+c -> cancela o comando atual
+
+ctrl+z -> pausa o comando atual em primeiro e plano e segundo
+
+ctrl+d -> faz o logout da sessão atual
+
+ctrl+w -> apaga uma palavra na linha atual
+
+ctrl+r -> busca um comando recente
+
+!! -> repete o último comando
+
+exit - > fechar o terminal
+
+
+
+
+
+
