@@ -38,6 +38,14 @@ Para excluir uma pasta -> rmdir 'nome da pasta',
 
 Para apagar un arquivo - > rm 'nome do arquivo'
 
+Para abrir o editor de texto no terminal -> nano 'nome do arquivo'
+
+Para abrir uma arquivo de texto no terminal -> cat 'nome do arquivo' 
+
+Para abrir o nodejs e executar no terminal -> nodejs 'nome do arquivo'
+
+ 
+
 
 
 
