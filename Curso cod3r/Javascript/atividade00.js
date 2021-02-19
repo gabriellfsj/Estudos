@@ -8,3 +8,11 @@ if(nome == 'gabriel francisco'){
 }
 
 console.log(nome)
+
+let comer = 'sim'
+
+while(comer == 'sim'){
+
+    console.log('comendo!!')
+
+}
