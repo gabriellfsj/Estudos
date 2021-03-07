@@ -10,4 +10,4 @@ console.log(`Fora = ${numero}`)
 const nume = (a,b) => console.log(a+b)
 
 1
-nume(1,2)1995566
+nume(1,2)
