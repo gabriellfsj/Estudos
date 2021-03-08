@@ -7,7 +7,8 @@ var numero = 1
 
 console.log(`Fora = ${numero}`)
 
+//função de soma 
 const nume = (a,b) => console.log(a+b)
 
-1
+
 nume(1,2)
