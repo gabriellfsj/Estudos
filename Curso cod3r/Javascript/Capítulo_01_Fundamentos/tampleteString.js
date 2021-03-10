@@ -5,7 +5,7 @@ const concatenar = 'Olá '+ nome+'!'
 
 const template =`
 Olá
-${nome}!` // ` permite quebra de linha tab e outras alterações
+${nome}!` // O ` permite quebra de linha tab e outras alterações
 
 console.log(concatenar, template)
 
