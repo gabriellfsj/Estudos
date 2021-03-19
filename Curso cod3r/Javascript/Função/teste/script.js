@@ -10,9 +10,8 @@ mud.textContent = "Alteração feita com sucesso"
 let alt = document.getElementById('dados')
 alt.textContent = 'Dados alterados ao clicar'
 
-const refresh = () => {
-     location.reload()
-} 
+const botao = document.getElementById('botao')
+botao.addEventListener('click', () => { location.reload()})
 
 const bot = (hi, inf) => {
     hi = document.getElementById('botao') 
