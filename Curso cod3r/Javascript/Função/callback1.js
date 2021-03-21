@@ -1,3 +1,5 @@
+// Callback functions são funcões acionadas quando um evento ocorrer
+
 const fabricantes = ['Mercedes', 'Audi', 'BMW']
 
 //Primeira forma:
@@ -14,4 +16,6 @@ const imprimir = (nome, indice) => {
 }
 
 fabricantes.forEach(imprimir)
+
+// outra forma
 fabricantes.forEach( fabricantes => console.log(fabricantes)) 
