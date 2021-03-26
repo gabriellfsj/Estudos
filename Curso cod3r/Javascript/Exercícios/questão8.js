@@ -1,7 +1,10 @@
 function cadastrodePartida (valores){
-    valores = []
-    valores.push(valores)
-    console.log(valores)
+    let vetor = []
+    for(let i=1 ; i < vetor.length; i++){
+        vetor[i] = valores
+        
+    }
+    console.log(vetor)
 
 }
 
