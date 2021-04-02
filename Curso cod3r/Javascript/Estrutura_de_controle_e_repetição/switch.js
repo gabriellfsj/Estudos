@@ -1,7 +1,7 @@
 const imprimiResultado = nota =>{
     switch(matchMedia.floor(nota)){
         case 10:
-            .log(`Quadro de Honra`)
+            console.log(`Quadro de Honra`)
             break
         case 9:
             console.log(`Quadro de Honra`)
