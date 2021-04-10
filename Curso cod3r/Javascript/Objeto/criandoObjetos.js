@@ -34,7 +34,7 @@ function criarFuncionario(nome, salarioBase, faltas){
     }
 }
 
-const f1 = criarFuncionario('Marcos', 7980,4)
+const f1 = criarFuncionario('Marcos', 7980, 4)
 const f2 = criarFuncionario('Maria', 11400, 1)
 console.log(f1.getSalario(), f2.getSalario())
 
@@ -45,7 +45,9 @@ filha.nome = 'Ana'
 console.log(filha)
 
 // Uma função famosa que retorna objeto
-const fromJSON = JSON.parse('{"info" : "Sou um JSON "}')
+const fromJSON = JSON.parse('{"info" : "Sou um JSON ", "Teste" : "testando "}')
+console.log(fromJSON)
 console.log(fromJSON.info)
+console.log(fromJSON.Teste)
 
 
