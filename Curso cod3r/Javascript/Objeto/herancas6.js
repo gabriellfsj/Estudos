@@ -4,13 +4,13 @@ function Aula(nome, videoD){
     this.videoD = videoD
 }
 
-// Usnado o new você cria um objeto a partir da função construtora:
+// Usando o new você cria um objeto a partir da função construtora:
 const aula1 = new Aula('Bem vindo', 123)
 const aula2 = new Aula ('Até Breve', 456)
 
 console.log(aula1,aula2)
 
-//Simulnado o new
+//Simulando o new
 
 function novo(f, ...param){
     const obj = {}
