@@ -1,8 +1,8 @@
 function filtrarNumero(vetor){
     const novovet = []
-    vetor.forEach(nome => {
-        if(typeof nome === "number"){
-            novovet.push(nome)
+    vetor.forEach(numero => {
+        if(typeof numero === "number"){
+            novovet.push(numero)
                 }
     });
     console.log(novovet)
