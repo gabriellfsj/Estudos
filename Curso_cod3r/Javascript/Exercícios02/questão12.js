@@ -1,9 +1,4 @@
-function removerPropriedade(obj1, parametro){
-   const copia = {...obj1}
-    delete copia[parametro]
-    return copia
 
-}
 function removerPropriedade(objeto, nomeDaPropriedade) {
     const copia = {...objeto}
     delete copia[nomeDaPropriedade]
@@ -13,7 +8,6 @@ function removerPropriedade(objeto, nomeDaPropriedade) {
 objj = {
     nome:'Gabriel',
     idade: 25,
-
     cidade: 'Parnaíba'
 }
 
