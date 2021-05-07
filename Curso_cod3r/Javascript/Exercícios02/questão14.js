@@ -1,11 +1,14 @@
-function objetoArray(objeto){
-    const vett = {...objeto}
-    console.log(vett)
+function objetoParaArray(objeto) {
+    const resultado = []
+    for (let chave in objeto)
+    resultado.push([ chave , objeto[chave] ])
+    return console.log(resultado)
 }
 
 obj1 = {
     nome:"Neon Genesis evangelion",
     data: 1996,
-    naci
+    nacionalidade: "Japão"
 }
-objetoArray()
+
+objetoParaArray(obj1)
