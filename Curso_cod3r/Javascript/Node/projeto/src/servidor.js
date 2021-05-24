@@ -9,7 +9,8 @@ const bodyParser = require('./body-parser')
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/produtos', (req, res,next)=>{
-    res.send(bancoDeDados.getProdutos()) // converter para JSON
+    res.send(bancoDeDados.getProdutosls
+        ()) // converter para JSON
 })
 
 app.get('/produtos/:id', (req, res,next)=>{
