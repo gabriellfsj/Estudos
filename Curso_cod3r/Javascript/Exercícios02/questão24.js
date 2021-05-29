@@ -1,4 +1,7 @@
-function buscarPalavraSemelhante(palavraBuscar, [...array]){
+/* O método 'includes' irá verificar se a expressão buscada existe
+ no array e retornará true se sim e false se não*/
+
+ function buscarPalavraSemelhante(palavraBuscar, [...array]){
     let recepitor = []
     array.forEach(element => {
         if(element.includes(palavraBuscar)){
