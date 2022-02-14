@@ -11,5 +11,3 @@ function cadastrodePartida (valores){
 cadastrodePartida(12)
 cadastrodePartida(10)
 cadastrodePartida(08)
-
-
