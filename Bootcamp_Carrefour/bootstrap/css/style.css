@@ -14,6 +14,7 @@ body{
 }
 
 .parceiros{
+    padding-top: 5px;
     background-color: rgba(173, 216, 230, 0.753);
     
 
@@ -31,3 +32,4 @@ h3{
 .bg-footer{
     background-color: lavender;
 }
+
